@@ -35,7 +35,6 @@ def currentbranches(path, local):
 		else:
 			local[path[16:] + "/" + i] = open(newpath,'r').readline().strip()
 
-    
 class CommitNode:
     def __init__(self, commit_hash):
         self.commit_hash = commit_hash
